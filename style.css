@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: #eee;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #00fff7;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+#invoiceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+#invoiceTable th,
+#invoiceTable td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+#invoiceTable input {
+  width: 100%;
+  padding: 8px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #00fff7;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+.totals {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.totals input {
+  width: 60px;
+  margin-left: 5px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.actions {
+  text-align: center;
+}

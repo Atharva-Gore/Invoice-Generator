@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futuristic Invoice Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Futuristic Invoice Generator</h1>
+    <div class="info">
+      <div>
+        <h3>From</h3>
+        <input type="text" id="from" placeholder="Your Company Name" />
+      </div>
+      <div>
+        <h3>To</h3>
+        <input type="text" id="to" placeholder="Client Name" />
+      </div>
+    </div>
+
+    <table id="invoiceTable">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="addRow">+ Add Item</button>
+
+    <div class="totals">
+      <label>Tax %: <input type="number" id="tax" value="10" /></label>
+      <p>Subtotal: ₹<span id="subtotal">0.00</span></p>
+      <p>Tax: ₹<span id="taxAmount">0.00</span></p>
+      <p><strong>Total: ₹<span id="total">0.00</span></strong></p>
+    </div>
+
+    <div class="actions">
+      <button id="save">💾 Save</button>
+      <button id="download">📥 Download PDF</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
